@@ -1,48 +1,51 @@
 {% block header %}
 <header class="header">
-  <nav class="navbar navbar-expand-sm fixed-top navbar-light bg-light shadow-sm " style="opacity:95%;">
+  <nav
+    class="navbar navbar-expand-sm fixed-top navbar-light bg-dark shadow-sm"
+    style="--bs-bg-opacity: 0.95"
+  >
     <div class="container">
-      <a href="#" class="navbar-brand mb-6">Hi, i'm Sebastian</a>
+      <a href="#" class="navbar-brand mb-3 text-white">Hi, i'm Sebastian</a>
       <button
-        class="navbar-toggler"
+        class="navbar-toggler bg-light"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#toggleMobileMenu"
         aria-controls="#toggleMobileMenu"
         aria-expanded="false"
         aria-label="Toggle navigarion"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      ></button>
       <div
-        class="collapse navbar-collapse nav justify-content-center"
+        class="collapse navbar-collapse nav justify-content-center align-items-center"
         id="toggleMobileMenu"
       >
         <ul class="navbar-nav mr-auto text-center">
           <li class="nav-item active">
-            <a href="#" class="nav-link">Home</a> 
+            <a href="#" class="nav-link text-white">HOME</a>
           </li>
           <li class="nav-item">
-            <a href="#about" class="nav-link">About</a>
+            <a href="#about" class="nav-link text-light">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#projects" class="nav-link text-white">PROJECTS</a>
           </li>
           <li class="nav-item">
-            <a href="#blog" class="nav-link">Blog</a>
+            <a href="#blog" class="nav-link text-white">BLOG</a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#contact" class="nav-link text-white">CONTACT</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0"></div>
-  </div>
   <div class="container-flex img">
-    <img src="../static/img/mountains_panorama.png" class="img-fluid mx-auto
-    d-block" alt="logo" width="100%" />
+    <img
+      src="../static/img/laptop.svg"
+      class="img-fluid mx-auto d-block"
+      alt="logo"
+      width="100%"
+    />
   </div>
 </header>
 
