@@ -1,52 +1,70 @@
 {% block header %}
 <header class="header">
+  <!-- Navbar -->
   <nav
-    class="navbar navbar-expand-sm fixed-top navbar-light bg-dark shadow-sm"
-    style="--bs-bg-opacity: 0.95"
+    class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top"
+    style="opacity: 95%"
   >
-    <div class="container">
-      <a href="#" class="navbar-brand mb-3 text-white">Hi, i'm Sebastian</a>
+    <div class="container p-2">
       <button
-        class="navbar-toggler bg-light"
+        class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
-        data-bs-target="#toggleMobileMenu"
+        data-bs-target="#navhambmenu"
         aria-controls="#toggleMobileMenu"
         aria-expanded="false"
         aria-label="Toggle navigarion"
-      ></button>
-      <div
-        class="collapse navbar-collapse nav justify-content-center align-items-center"
-        id="toggleMobileMenu"
       >
-        <ul class="navbar-nav mr-auto text-center">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navhambmenu">
+        <ul
+          class="navbar-nav mx-auto fs-5 justify-content-center align-items-center"
+        >
           <li class="nav-item active">
-            <a href="#" class="nav-link text-white">HOME</a>
+            <a href="#" class="nav-link text-white">home</a>
           </li>
           <li class="nav-item">
-            <a href="#about" class="nav-link text-light">ABOUT</a>
+            <a href="#about" class="nav-link text-light">about</a>
           </li>
           <li class="nav-item">
-            <a href="#projects" class="nav-link text-white">PROJECTS</a>
+            <a href="#projects" class="nav-link text-white">projects</a>
           </li>
           <li class="nav-item">
-            <a href="#blog" class="nav-link text-white">BLOG</a>
+            <a href="#blog" class="nav-link text-white">blog</a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link text-white">CONTACT</a>
+            <a href="#contact" class="nav-link text-white">contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="container-flex img">
-    <img
-      src="../static/img/laptop.svg"
-      class="img-fluid mx-auto d-block"
-      alt="logo"
-      width="100%"
-    />
-  </div>
+  <!-- END Navbar -->
+  <!-- Showcase -->
+  <section
+    class="showcase bg-image text-light text-left"
+    style="
+      background-image: url(../static/img/macweb.webp);
+      height: 50vh;
+      background-attachment: fixed;
+      background-position: top;
+      background-repeat: no-repeat;
+      height: 100vh;
+      background-size: cover;
+    "
+  >
+    <div class="container p-5">
+      <div class="d-flex position-relative" style="height: 90vh">
+        <div class="position-absolute top-50 start-0 translate-middle-y">
+          <div class="display-2">
+            <p>Hi</p>
+            <p>I'm Sebastian</p>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </section>
 </header>
-
 {% endblock %}
