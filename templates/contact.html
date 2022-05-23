@@ -1,85 +1,95 @@
 {% block contact %}
 
-<section class="contact p-5" id="contact">
-  <div class="container-flex bg-body p-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div>
-            <p></p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div>
-            <form class="row" novalidate>
-              <div class="col-md-9 mb-3">
-                <label for="validationCustom01" class="form-label">Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="validationCustom01"
-                  value="Mark"
-                  required
-                />
+<section class="contact bg-image text-dark text-left p-5"
+style="
+  background-image: url(../static/img/mountains.webp);
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;" 
+  id="contact">
 
-                <div class="valid-feedback">Looks good!</div>
-              </div>
-              <div class="col-md-9 mb-3">
-                <label for="validationCustomUsername" class="form-label"
-                  >Email</label
-                >
-                <div class="input-group has-validation">
-                  <span class="input-group-text" id="inputGroupPrepend">@</span>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="validationCustomUsername"
-                    aria-describedby="inputGroupPrepend"
-                    required
-                  />
-              </div>
-              
-              <div class="col-md-12 mb-3">
-                <label for="validationTextarea" class="form-label"
-                  >Textarea</label
-                >
-                <textarea
-                  class="form-control"
-                  id="validationTextarea"
-                  placeholder="Required example textarea"
-                  required
-                ></textarea>
-                <div class="invalid-feedback">
-                  Please enter a message in the textarea.
+
+    <div class="container bg-body p-5">
+      <div class="row">
+          <div class="col-md-6 ">
+            <p class="display-5 text-center">Send me message</p>
+              <form class="row " novalidate>
+                <!-- NAME contact section -->
+                <div class="col-md-12 mb-3">
+                  <label for="validationCustom01" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationCustom01"
+                      value=""
+                      required
+                    />
+                  <div class="valid-feedback">Looks good!</div>
                 </div>
-              </div>
-              <div class="col-12">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="invalidCheck"
-                    required
-                  />
-                  <label class="form-check-label" for="invalidCheck">
-                    Agree to terms and conditions
-                  </label>
-                  <div class="invalid-feedback">
-                    You must agree before submitting.
+                <div class="col-md-12 mb-3">
+                    <!-- EMAIL contact section -->
+                    <label for="validationCustomUsername" class="form-label"
+                      >Email</label
+                    >
+                    <div class="input-group has-validation">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend"
+                        required
+                      />
+                </div>
+                  <!-- TEXT area -  contact section -->
+                  <div class="col-md-12 mb-3 pt-3">
+                    <label for="validationTextarea" class="form-label"
+                      >Message</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="validationTextarea"
+                      placeholder=""
+                      required
+                    ></textarea>
+                    <div class="invalid-feedback">
+                      Please enter a message in the textarea.
+                    </div>
                   </div>
-                </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="invalidCheck"
+                        required
+                      />
+                      <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                      </label>
+                      <div class="invalid-feedback">
+                        You must agree before submitting.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 pt-3">
+                    <button class="btn btn-primary" type="submit">
+                      Submit form
+                    </button>
+                  </div>
+                </form>
               </div>
-              <div class="col-12">
-                <button class="btn btn-primary" type="submit">
-                  Submit form
-                </button>
-              </div>
-            </form>
           </div>
+        <div class="col-md-6 ">
+        <div>
+          <p class="display-5 text-center">Get in touch</p>
+          <p class="display-6 text-center pt-2">If you have any questions please feel free to contact me.</p>
         </div>
       </div>
     </div>
-  </div>
+
 </section>
 {% endblock %}

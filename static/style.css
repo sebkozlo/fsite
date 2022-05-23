@@ -3,3 +3,7 @@
   content: "";
   height: 60px;
 } */
+
+.form-control {
+  border-radius: 0;
+}
