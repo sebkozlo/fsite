@@ -1,24 +1,20 @@
-/* body::before {
-  display: block;
-  content: "";
-  height: 60px;
-} */
+:root {
+  --background-color-light: #ecf0f3;
+  --background-color-gray: #dee2e6;
+}
+
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
-.nav-item:hover {
-  color: gray;
-}
-.form-control {
-  border-radius: 0;
-}
 
-.fa-brands {
-  color: white;
+.showcase{
+  background-color: var(--background-color-gray);
 }
-
-.fa-brands:hover {
-  color: gray;
+.aboutme{
+  background-color: var(--background-color-light);
+}
+.projects{
+  background-color: var(--background-color-gray);
 }
