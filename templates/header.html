@@ -1,10 +1,7 @@
 {% block header %}
 <header class="header">
   <!-- Navbar -->
-  <nav
-    class="navbar navbar-expand-lg bg-light fixed-top"
-        style="opacity: 95%"
-  >
+  <nav class="navbar navbar-expand-lg bg-light fixed-top" style="opacity: 95%">
     <div class="container">
       <button
         class="navbar-toggler"
@@ -19,28 +16,32 @@
       </button>
       <div class="collapse navbar-collapse" id="navhambmenu">
         <ul
-          class="navbar-nav mx-auto fs-5 justify-content-between align-items-center"
+          class="navbar-nav d-flex bg-light fs-5 justify-content-between align-items-center"
         >
-        <li class="navbar navbar-light bg-light align-items-left">
-          <a class="navbar-brand " href="#">
-            <img class="logo" src="../static/img/coding.png">
-          </a>
-        </li>
-          <li class="nav-item ">
-            <a href="#" class="nav-link">home</a>
+          <li
+            class="navbar navbar-light bg-light d-none d-md-block d-lg-block d-xl-block mr-auto p-2"
+          >
+            <a class="navbar-brand" href="#">
+              <img class="logo" src="../static/img/coding.png" />
+            </a>
           </li>
-          <li class="nav-item">
-            <a href="#aboutme" class="nav-link">about</a>
-          </li>
-          <li class="nav-item">
-            <a href="#projects" class="nav-link">projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="#blog" class="nav-link">blog</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">contact</a>
-          </li>
+          <div class="container d-flex flex-wrap">
+            <li class="nav-iter">
+              <a href="#" class="nav-link">home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#aboutme" class="nav-link">about</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#blog" class="nav-link">blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">contact</a>
+            </li>
+          </div>
         </ul>
       </div>
     </div>
@@ -50,22 +51,19 @@
   <section class="showcase">
     <div class="container text-dark text-left">
       <div class="container pt-5">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-md-6">
-            <div class="d-flex position-relative">
-              <div class="position-absolute">
-                <div class="display-2">
-                  <p>Hi</p>
-                  <p>I'm Sebastian</p>
-                </div>
-              </div>
+            <div class="display-2">
+              <p>Hi</p>
+              <p>I'm Sebastian</p>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="d-flex position-relative pb-5">
-                <img class="schowcase-logo" src="../static/img/programmer.png" alt="" />
-              </div>
-            </div>
+          <div class="col-md-6 d-flex justify-content-center">
+            <img
+              class="schowcase-logo d-none d-md-block d-lg-block d-xl-block mr-auto"
+              src="../static/img/programmer.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
